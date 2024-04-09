@@ -8,7 +8,12 @@ class LoginDialog(QDialog):
         super().__init__()
         self.ui = uic.loadUi('.ui/login.ui', self)
 
-        # Привязка событий кнопоккккккк
+        # Привязка событий кнопок
+        self.ui.registerButton.setText("Зарегистрироваться")
+        self.ui.loginButton.setText("Войти")
+        self.ui.reg.setText("Нет аккаунта?")
+        self.ui.vhod.setText("Авторизация")
+
         self.ui.registerButton.clicked.connect(self.register)
         self.ui.loginButton.clicked.connect(self.login)
 
