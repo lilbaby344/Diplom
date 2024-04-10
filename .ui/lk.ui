@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>30</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Выйти</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="photoView">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>170</y>
+     <width>121</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>170</y>
+     <width>131</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="Fio">
+      <property name="text">
+       <string>ФИО</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="Dolzhnost">
+      <property name="text">
+       <string>Должность</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="Otdel">
+      <property name="text">
+       <string>Отдел</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="Tabnum">
+      <property name="text">
+       <string>Табельный_номер</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="Email">
+      <property name="text">
+       <string>Почта</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="Phone">
+      <property name="text">
+       <string>Номер_телефона</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>170</y>
+     <width>301</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="FioLine"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="DolzhnostLine"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="OtdelLine"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="TabnumLine"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="EmailLine"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="PhoneLine"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
