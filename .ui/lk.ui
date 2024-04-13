@@ -70,7 +70,7 @@
     <item>
      <widget class="QLabel" name="Tabnum">
       <property name="text">
-       <string>Табельный_номер</string>
+       <string>Табельный номер</string>
       </property>
      </widget>
     </item>
@@ -84,7 +84,7 @@
     <item>
      <widget class="QLabel" name="Phone">
       <property name="text">
-       <string>Номер_телефона</string>
+       <string>Номер телефона</string>
       </property>
      </widget>
     </item>
@@ -119,6 +119,52 @@
      <widget class="QLineEdit" name="PhoneLine"/>
     </item>
    </layout>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>660</y>
+     <width>291</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Обратиться в поддержку  +7 (932) 557-54-23</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>370</y>
+     <width>404</width>
+     <height>49</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#828282;&quot;&gt;Для изменения персональных данных вам необходимо обратиться&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; color:#828282;&quot;&gt;к кадровому администратору с оригиналом документа&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="buddy">
+    <cstring></cstring>
+   </property>
   </widget>
  </widget>
  <resources/>
