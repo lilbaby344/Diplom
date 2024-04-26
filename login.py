@@ -3,7 +3,6 @@ import sqlite3
 from PyQt6.QtWidgets import QApplication, QDialog, QMessageBox
 from PyQt6.QtGui import QPixmap, QPalette, QBrush
 from PyQt6 import uic
-from lk import MyDialog
 
 class LoginDialog(QDialog):
     def __init__(self):
@@ -47,7 +46,8 @@ class LoginDialog(QDialog):
         # Проверка результата запроса
         if result:
             print(f"Вход: {username}, {password}")
-            self.lk_window = MyDialog()
+            from lk import MyDialog
+            self.lk_window = MyDialog(username, password)  # Передаем входные данные пользователя в класс MyDialog
             self.lk_window.show()
             self.close()
 
@@ -58,6 +58,7 @@ class LoginDialog(QDialog):
             msg_box.setIcon(QMessageBox.CriticalIcon)
             msg_box.exec()
         conn.close()
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
