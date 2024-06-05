@@ -20,12 +20,38 @@ class LoginDialog(QDialog):
         self.ui.loginButton.clicked.connect(self.login)
         self.ui.passwordLineEdit.returnPressed.connect(self.ui.loginButton.click)
 
+        # Применение стилей
+        self.apply_styles()
+
     def setBackground(self, imagePath):
         pixmap = QPixmap(imagePath)
         brush = QBrush(pixmap)
         palette = QPalette()
         palette.setBrush(QPalette.ColorRole.Window, brush)
         self.setPalette(palette)
+
+    def apply_styles(self):
+        style_sheet = """
+        QPushButton {
+            background-color: #4fc3f7; /* Голубой цвет кнопки */
+            color: white;
+            border: none;
+            border-radius: 10px; /* Закругленные углы */
+            padding: 10px;
+        }
+        QPushButton:hover {
+            background-color: #29b6f6; /* Цвет кнопки при наведении */
+        }
+        QLineEdit {
+            border: 2px solid #4fc3f7;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        QLabel {
+            color: #01579b; /* Темно-синий цвет текста */
+        }
+        """
+        self.setStyleSheet(style_sheet)
 
     def register(self):
         username = self.ui.usernameLineEdit.text()
@@ -55,10 +81,9 @@ class LoginDialog(QDialog):
             msg_box = QMessageBox()
             msg_box.setWindowTitle("Ошибка")
             msg_box.setText("Ошибка авторизации. Попробуйте еще раз или обратитесь к системному администратору.")
-            msg_box.setIcon(QMessageBox.CriticalIcon)
+            msg_box.setIcon(QMessageBox.Icon.Critical)
             msg_box.exec()
         conn.close()
-
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -12,3 +12,4 @@ if __name__ == "__main__":
     login_dialog.show()
 
     sys.exit(app.exec())
+# вызвать создание бд потом надежность
