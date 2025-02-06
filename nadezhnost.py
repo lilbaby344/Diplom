@@ -78,8 +78,6 @@ class nadezhnost(QDialog):
             id, ла, система, ки, описание, разработчик_интенсивность, эксплуатационная_интенсивность, стандарт_интенсивность, \
                 уникальная_функция, функциональный_отказ, ссылка, dal, метод_контроля = result
 
-            self.ui.comboBoxLA_2.setCurrentText(ла)
-            self.ui.comboBoxSystem_2.setCurrentText(система)
             self.ui.lineEditKI_2.setText(ки)
             self.ui.lineEditOpisanie_2.setText(описание)
             self.ui.lineEditRazrab_2.setText(разработчик_интенсивность)
